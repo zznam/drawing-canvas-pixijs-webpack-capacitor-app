@@ -1,0 +1,6 @@
+{
+  "appId": "com.ambros.demozz",
+  "appName": "webpack-demo",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
