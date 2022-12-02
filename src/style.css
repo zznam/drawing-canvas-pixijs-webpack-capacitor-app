@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/Branda-yolq.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'MyFont';
+}
