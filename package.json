@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "patch-package"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.2",
+    "patch-package": "^8.0.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
@@ -19,7 +21,7 @@
   "dependencies": {
     "@capacitor/android": "^4.6.0",
     "@capacitor/camera": "^4.1.4",
-    "@capacitor/cli": "^4.6.0",
+    "@capacitor/cli": "4.6.0",
     "@capacitor/core": "^4.6.0",
     "@capacitor/filesystem": "^4.1.4",
     "@capacitor/ios": "^4.6.0",
@@ -27,5 +29,8 @@
     "dat.gui": "^0.7.7",
     "lodash": "^4.17.21",
     "pixi.js": "^5.3.3"
+  },
+  "overrides": {
+    "tar": "7.5.22"
   }
 }
